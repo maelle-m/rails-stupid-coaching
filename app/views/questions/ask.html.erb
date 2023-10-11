@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Questions</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+
+<body>
+  <div class="pretty">
+   <%= yield %>
+
+  <h1>Stupid Coaching</h1>
+
+  <form action="/answer" method="get" data-turbo="false">
+    <input type="text" name="question" placeholder="Ask the coach anything..." minlength="15">
+    <input type="submit" value="Ask!">
+  </form>
+  </div>
+</body>
+</html>
